@@ -1,0 +1,11 @@
+<h2> <%= @answer %></h2>
+
+<% if @answer.downcase == "i am going to work" %>
+  <p>Great !</p>
+<% elsif @answer.chars.include?("?") %>
+  <p>Silly question, get dressed and go to work!</p>
+<% else %>
+   <p> I don't care, get dressed and go to work!</p>
+<% end %>
+
+<a href="/ask">Ask a new question</a>
